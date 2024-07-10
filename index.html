@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i'm begginer of JavaScript  </title>
+</head>
+<body>
+    <h1>Hello, JavaScript!</h1>
+    <script>
+        console.log('Hello, world!');
+        alert('Hello, world!');
+        // variable and its types//
+        let initial='heloo dude';
+        console.log(initial);
+        console.log(typeof(initial));
+        let counter = 120;
+        console.log(typeof(counter)); 
+
+        counter = false; 
+        console.log(typeof(counter)); 
+        console.log(Boolean('Hi'));// true
+            console.log(Boolean(''));  // false
+
+            console.log(Boolean(20));  // true
+            console.log(Boolean(Infinity));  // true
+            console.log(Boolean(0));  // false
+
+            console.log(Boolean({foo: 100}));  // true on non-empty object
+            console.log(Boolean(null));// false 
+            let contact = {
+                firstName: 'lakshmi ',
+                lastName: 'narayana',
+                email: 'lak.doe@example.com',
+                phone: '(123456)',
+                address: {
+                    building: '4000',
+                    street: 'North 1st street',
+                    city: 'Santhome church',
+                    state: 'karnataka',
+                    country: 'india'
+                    
+    }
+}
+                    let students= 2003_2021
+                    console.log(contact.email);
+                    console.log (students);
+                    // string //
+                    let classname = 'revathy';
+                    let str= classname+'baskaran';
+                    console.log(str);
+                    console.log(str.length);
+                    console.log(str[12]);
+                    console.log(str[str.length-1]);
+                    console.log(str[str.length-1],(str[str.length-3]));
+                    // comaprison operation in string //
+                    let output = 'classname'< 'str';
+                    console.log(output);
+                    // array with push , unshift and remove function//
+                    let dept=[' ECE','CIVIL','IT','CSE','MECH'];
+                    dept.push('EEE');
+                    console.log(dept);
+                    dept.unshift('AGRI');
+                    let index = dept.indexOf('CSE');
+                    console.log(index);
+                    console.log (Array.isArray(dept)); 
+                    // operators//
+                     console.log('arithmetic operators')
+                      let x= 2023;
+                      let y=2003
+                      console.log(x+y);
+                      console.log(x-y);
+                      let selling_price=100;
+                      var n_of_products=29;
+                      let result=(selling_price*n_of_products);
+                      console.log(result);
+                      console.log(x/y);
+                      console.log(x%y); 
+                      console.log('assignment operators');
+                      console.log(x+=y); //x=x+y
+                      console.log(x-=y);
+                      console.log(x*=y);
+                      console.log(x%=y);// modulo 
+                      console.log(x&=y);  // and
+                      console.log(x|=y);//or
+                      console.log(x^y); //xor operator 
+                      console.log(x>>>=y);     
+                        // uary operators
+                        let temp = 12  
+                        console.log('the temperature of my home town was',-temp);
+                        console.log( 'prefix of y is ',++y+5);// add one before executing increment operator
+                        console.log( 'postfix of y is',y++-5);// add after the increment operator
+                        let std_list=50
+                        console.log(--std_list); //decrement operator
+                        console.log(std_list--+9);
+                        console.log('comparison operator');
+                        let mark_stud1 = {
+                            valueOf: function () {
+                                return '78';
+                            },
+                            };
+
+                            let mark_stud2 = {  
+                            toString: function () {
+                            return '67';
+  },
+};
+                            console.log(mark_stud1> 10); // true
+                            console.log(mark_stud2 == 20); // false
+                            console.log("10" == 10); // conver string to check the num is equal or not, true//
+                            console.log("10" === 10); //  checks strict equal of both value ,false//
+                            console.log('logical operators')
+                            let a= true;
+                            let b= false;
+                            console.log(a&&b);// logical and operator
+                            console.log(a||b);
+                            console.log(!a,!b);
+                            console.log(!!x);
+                            let title = 'JavaScript was new to me ';
+                            title ||= 'oh my god ';
+                            console.log(title);
+                            console.log('logical assignment operatrs');
+                            console.log(a&&=b);// it works 'a&& (a=b)''
+                            console.log(a||=b);// a|| (a=b)
+                            let gender= 'male'?? 'female'; // null coleasing opertor it accepts two values//
+                            console.log(gender);
+                            let probability_price='false'??'200';
+                            console.log(probability_price);
+                            let sample=Math.pow(5,3); //first_num is base,second_num is power 
+                            console.log(sample);
+                            let samples= 5*3;
+                            console.log(samples);
+                            
+                        
+                    </script>
+</body>
+</html>

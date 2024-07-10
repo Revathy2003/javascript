@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions</title>
+</head>
+<body>
+    <script>
+    const add = (x, y) => x + y;
+
+    try {
+    let result = add(10, 20);
+    console.log(result);
+    } catch (e) {
+    console.log({ name: e.name, message: e.message });
+    }
+    console.log('Bye');
+    // trycatch finally
+    let digit = 0;
+    try {
+    digit = add(10, 20);
+    } catch (e) {
+    console.log(e.message);
+    } finally {
+    console.log({ digit });
+    }
+    // throw exception
+    function sum(x, y) {
+  if (typeof x !== 'number') {
+    throw 'The first argument must be a number';
+  }
+  if (typeof y !== 'number') {
+    throw 'The second argument must be a number';
+  }
+
+  return x + y;
+}
+
+try {
+  const result = sum('a', 10);
+  console.log(result);
+} catch (e) {
+  console.log(e);
+}
+
+</script>
+</body>
+</html>
